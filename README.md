@@ -32,3 +32,23 @@ O sistema deverá gerar um relatório com informações específicas após a exe
 
 - Poderemos utilizar essa aplicação fazendo uma chamada via docker. Ex:
   - docker run {sua_imagem_docker} —url=<http://google.com> —requests=1000 —concurrency=10
+
+## Executando o Projeto
+
+- Primeiramente é necessário fazer o build do projeto. Para isso, execute o comando abaixo:
+
+```bash
+make build
+```
+
+- Após o build, execute o comando abaixo para rodar o projeto diretamente do Container Docker:
+
+```bash
+make run
+```
+
+- Caso seja necessário rodar o projeto localmente, execute o comando abaixo:
+
+```bash
+make run-local
+```
